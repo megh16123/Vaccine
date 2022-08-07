@@ -192,7 +192,6 @@ public class Main {
                         Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (v1, v2) -> v2, LinkedHashMap::new));
 
             } else {
-
                 continents = continents.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByKey()))
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (v1, v2) -> v2,
                                 LinkedHashMap::new));
